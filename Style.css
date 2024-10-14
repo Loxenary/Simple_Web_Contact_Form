@@ -1,0 +1,250 @@
+:root {
+  --light-primary: #8ecae6;
+  --dark-primary: #023047;
+  --yellow-text: #ffb703;
+  --dark-yellow-text: #fb8500;
+  --light-secondary: #d9eaff;
+  --dark-selected-color: #63808d;
+  --dark-nonselected-color: #5a4000;
+
+  --green-primary: #d9ffe3;
+
+  --red-primary: #ffe3e3;
+}
+
+header div {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, auto);
+  height: fit-content;
+}
+
+.tab {
+  text-align: center;
+  font-family: "Gill Sans";
+  justify-content: center;
+  background-color: var(--light-primary);
+  border: 1px solid var(--dark-primary);
+  font-weight: bold;
+  font-style: normal;
+  color: var(--dark-nonselected-color);
+  font-size: 40px;
+  height: 111px;
+}
+
+.tab.active {
+  background-color: var(--dark-selected-color);
+  color: var(--yellow-text);
+}
+
+body {
+  background: linear-gradient(
+    130deg,
+    var(--light-primary) 20%,
+    var(--dark-primary) 100%
+  );
+  margin: 0;
+  padding-bottom: 20px;
+  height: fit-content;
+}
+
+.introduction {
+  justify-items: center;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+  margin-top: 20px;
+}
+
+.introduction h1 {
+  color: var(--yellow-text);
+  font-size: 70px;
+  text-align: center;
+  font-weight: bold;
+  text-shadow: -1px -1px 0 var(--dark-primary), 1px -1px 0 var(--dark-primary),
+    -1px 1px 0 var(--dark-primary), 1px 1px 0 var(--dark-primary);
+}
+
+.main-container {
+  background-color: var(--dark-primary);
+  margin-left: 10%;
+  margin-right: 10%;
+  margin-top: 20px;
+  margin-bottom: 40px;
+  padding: 20px 40px;
+  border-radius: 20px;
+  font-family: Georgia;
+  overflow: auto;
+}
+
+.main-container h2 {
+  color: var(--yellow-text);
+  font-size: xx-large;
+
+  font-weight: bold;
+  margin-bottom: 40px;
+}
+
+.main-container div {
+  margin-top: 10px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
+.input-container {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+}
+
+.centerized-item {
+  align-items: center;
+}
+
+.input-container label {
+  color: var(--yellow-text);
+  width: 19%;
+  font-size: large;
+  font-weight: bold;
+}
+
+#issue-input {
+  background-color: var(--light-secondary);
+  height: 60px;
+  width: 200px;
+  border-radius: 10px;
+  color: var(--dark-primary);
+}
+
+.input-container .input-text {
+  width: 50%;
+  height: 60px;
+  padding: 10px;
+  background-color: var(--light-secondary);
+  border-radius: 10px;
+}
+
+.submit-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.submit-button button {
+  border-radius: 10px;
+  width: 150px;
+  height: 80px;
+  background-color: var(--dark-primary);
+  font-size: x-large;
+  color: var(--yellow-text);
+}
+
+.detail-container {
+  display: flex;
+}
+
+.hidden {
+  display: none;
+}
+
+.detail-container .label {
+  color: white;
+}
+
+.detail-container .content {
+  color: var(--yellow-text);
+  text-align: center;
+}
+
+.detail-container h3 {
+  font-size: x-large;
+  font-family: "Segoe UI";
+}
+
+.detail-intro {
+  display: flex;
+  justify-content: space-between;
+}
+
+.edit-button {
+  width: 114px;
+  height: 70px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  padding: 7px;
+  border-radius: 10px;
+  background-color: var(--light-secondary);
+}
+
+.image-filler {
+  width: 100%;
+  height: 100%;
+  object-fit: fill;
+}
+
+.comment-displayer {
+  width: 100%;
+  height: 441px;
+  background-color: var(--light-secondary);
+  border: var(--dark-primary);
+  border-radius: 20px;
+  margin-left: 10px;
+  margin-top: 10px;
+  font-size: x-large;
+}
+
+.detail-container-comment {
+  margin-top: 40px;
+}
+
+.detail-container-comment .label {
+  font-size: x-large;
+  font-family: "Segoe UI";
+}
+
+.confirm {
+  background-color: var(--green-primary);
+  height: 70px;
+  width: 70px;
+  border-radius: 20px;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+}
+
+.confirm h1 {
+  font-size: xx-large;
+  color: black;
+  font-weight: normal;
+  font-family: "Courier New";
+}
+
+.close-button {
+  background-color: var(--red-primary);
+  height: 70px;
+  width: 70px;
+  padding: 10px;
+  border-radius: 20px;
+}
+
+#non-edit {
+  gap: 10px;
+  display: flex;
+  flex-direction: row;
+  justify-content: right;
+}
+.comments-text{
+  padding-left: 20px;
+
+}
+.content input{
+  border-radius: 10px;
+  background-color: var(--light-secondary);
+  color: var(--dark-primary);
+  width: 400px;
+  height: 50px; 
+}
